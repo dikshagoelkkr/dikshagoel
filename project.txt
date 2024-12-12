@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Goel - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .header, .cover-photo, .container {
+            width: 100%;
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .title-bar h4 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .cover-photo {
+            height: 270px;
+            background: url('cover.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .cover-text h2, .cover-text h3 {
+            margin: 0;
+        }
+
+        .project-section {
+            background-color: #333;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 1000px;
+            color: #e0e0e0;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .project-content {
+            display: flex;
+        }
+
+        .project-text-column {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .project-text {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .project-image-column {
+            flex: 1;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-references {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .project-references a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .project-references a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <h4>Diksha Goel</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publication</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cover-photo">
+        <div class="cover-text">
+           <h2 style="margin-bottom: 5px;">Projects</h2>
+        </div>
+    </div>
+    <div class="project-section">
+        <div class="project">
+            <h3 class="project-title">Project: Optimizing Cyber Defense in Dynamic Active Directories through Reinforcement Learning</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This project targets cybersecurity vulnerabilities of organizational Active Directory (AD) systems by developing advanced edge-blocking defenses. We use a Stackelberg game model between attacker and defender, devising a Reinforcement Learning (RL)-based attack strategy and an RL-assisted Evolutionary Diversity Optimization-based defense strategy. Our approach enhances the defender's proficiency in hardening dynamic AD graphs while ensuring scalability for large-scale AD.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="OverallProblem.png" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, you can find the paper here:</p>
+                <p><a href="https://arxiv.org/pdf/2406.19596">Optimizing Cyber Defense in Dynamic Active Directories through Reinforcement Learning</a> by Diksha Goel, Kristen Moore, Mingyu Guo, Derek Wang, Minjune Kim, Seyit Camtepe. Published at ESORICS 2024 (CORE 2021 Rank: A, Top-tier Cyber Security Conference).</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Project: Graph-Neural-Network Based Models for Discovering Structural Hole Spanners in Large-Scale and Diverse Networks</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This project aims to develop effective solutions for discovering Structural Hole Spanners (SHS) in large-scale and diverse networks. We propose graph neural network-based models, GraphSHS and Meta-GraphSHS, to discover SHS nodes efficiently. GraphSHS exploits network structure and node features to lessen computational cost while maintaining high accuracy. Meta-GraphSHS uses meta-learning to create customized models for each new graph, ensuring effective SHS discovery across diverse networks.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="meta_gnn.jpg" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, you can find the paper here:</p>
+                <p><a href="https://www.sciencedirect.com/science/article/pii/S0957417424005013">Effective Graph-Neural-Network based Models for Discovering Structural Hole Spanners in Large-Scale and Diverse Networks</a> by Diksha Goel, Hong Shen, Hui Tian, Mingyu Guo. Published in Expert Systems with Applications, 2024. (CORE 2021 Rank: B, Impact Factor: 8.5).</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Project: A Comprehensive Survey on DDoS Detection, Mitigation, and Defense Strategies in Software-Defined Networks</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This survey reviews various strategies for detecting, mitigating, and defending against DDoS attacks in Software Defined Networking (SDN) environments. It analyzes different types of DDoS attacks and examines emerging security measures for preventing them. The survey also explores datasets, tools, and simulators used for detecting DDoS attacks in SDN and provides a comparative analysis of various detection techniques.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="cluster2.jpg" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, you can find the paper here:</p>
+                <p><a href="https://link.springer.com/article/10.1007/s10586-024-04596-z">A Comprehensive Survey on DDoS Detection, Mitigation, and Defense Strategies in Software-Defined Networks</a> by Ankit Kumar Jain, Hariom Shukla, Diksha Goel. Published in Cluster Computing, 2024. (Impact Factor: 4.4).</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title">Project: Overview of Smartphone Security: Attack and Defense Techniques</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This chapter discusses wireless telecommunication technologies and their contribution to the widespread use of smartphones. It explores the various functionalities provided by smartphones, the increased opportunities for attacks due to their usage for sensitive transactions, and the defense techniques to protect against these attacks.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="smart.png" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, you can find the chapter here:</p>
+                <p><a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429424878-10/overview-smartphone-security-attack-defense-techniques-diksha-goel-ankit-kumar-jain">Overview of Smartphone Security: Attack and Defense Techniques</a> by Diksha Goel, Ankit Kumar Jain. Published in Computer and Cyber Security, Principles, Algorithm, Applications, and Perspectives.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

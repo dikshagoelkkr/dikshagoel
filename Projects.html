@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Goel - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .header, .cover-photo, .container {
+            width: 100%;
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .title-bar h4 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .cover-photo {
+            height: 270px;
+            background: url('cover.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .cover-text h2, .cover-text h3 {
+            margin: 0;
+        }
+
+        .project-section {
+            background-color: #333;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 1000px;
+            color: #e0e0e0;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .project-title span {
+            color: #ffcc00;
+        }
+
+        .project-content {
+            display: flex;
+        }
+
+        .project-text-column {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .project-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .project-image-column {
+            flex: 1;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-references {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .project-references a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .project-references a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <h4>Diksha Goel</h4>
+                <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Publications.html">Publications</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Reviewer.html">Reviewer & Organizer</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="cover-photo">
+        <div class="cover-text">
+           <h2 style="margin-bottom: 5px;">Projects</h2>
+        </div>
+    </div>
+    <div class="project-section">
+        <div class="project">
+            <h3 class="project-title"><span>Project:</span> Optimizing Cyber Defense in Dynamic Active Directories</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This project addresses the lack of effective edge-blocking strategies in dynamic networks, specifically targeting cybersecurity vulnerabilities in organizational Active Directory (AD) systems. Unlike traditional methods treating AD systems as static, we recognize their dynamic nature and develops advanced defenses using a Stackelberg game model. We design a Reinforcement Learning (RL)-based attack strategy and an RL-assisted Evolutionary Diversity Optimization defense strategy, where attacker and defender improve through parallel gameplay. To tackle computational challenges, we introduce an RL Training Facilitator that prunes environments and neural networks, enhancing training efficiency and scalability. Our results show this approach significantly strengthens AD security and scales effectively for large networks.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="OverallProblem.png" alt="Project Image" class="project-image">
+<img src="Architecture.png" alt="Project Image" class="project-image" style="height: 130px; width: 350px">
+
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, you can find the paper here: <a href="https://arxiv.org/pdf/2406.19596"> Project Link</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title"><span>Project:</span> Discovering Structural Hole Spanners in Diverse and Large Networks</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            A Structural Hole Spanner (SHS) bridges otherwise disconnected network communities. Current SHS discovery solutions are often slow in large-scale networks and ineffective across diverse networks due to inter-graph differences. To address these issues, we design GraphSHS, a graph neural network model that transforms SHS discovery into a learning problem, leveraging network structure and node features for efficient and accurate SHS identification. For diverse networks, we introduce Meta-GraphSHS, which uses meta-learning to adapt to new graphs by learning from various training graphs. Our experiments on synthetic and real-world datasets show GraphSHS is quite faster than existing methods while maintaining high accuracy, and Meta-GraphSHS achieves high accuracy across diverse networks.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    
+                    <img src="p1.jpg" alt="Project Detail Image" class="project-image">
+                
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, visit the project:<a href="https://www.sciencedirect.com/science/article/pii/S0957417424005013"> Project Link</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="horizontal-line"></div>
+<div class="project">
+    <h3 class="project-title"><span>Project:</span> Microservice Vulnerability Analysis</h3>
+    <div class="project-content">
+        <div class="project-text-column">
+            <div class="project-text">
+                <p>
+                    Microservice architectures are revolutionizing small businesses and large corporations with exceptional advantages in maintainability, reusability, and scalability. However, these benefits come with significant security challenges, including increased complexity of service interactions, expanded attack surfaces, and intricate dependency management, which introduce a wide range of cybersecurity vulnerabilities. This project addresses the lack of comprehensive research by gathering, analyzing, and synthesizing existing literature on microservice vulnerabilities. This project provides crucial guidelines for practitioners and researchers, advancing the state-of-the-art and state-of-practice in securing microservice architectures.
+                </p>
+            </div>
+        </div>
+        <div class="project-image-column">
+            <img src="Criticality_Diagram.png" alt="Microservice Vulnerability Analysis Image" class="project-image">
+        </div>
+    </div>
+    <div class="project-references">
+        <p>For more information, visit the project: <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10720020">Project Link</a></p>
+    </div>
+</div>
+<div class="horizontal-line"></div>
+
+
+
+        <div class="project">
+            <h3 class="project-title"><span>Project:</span> DDoS Defense Strategies in Software-Defined Networks</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            Software Defined Networking (SDN) is increasingly prevalent in cloud computing, IoT, and other environments for optimizing network efficiency. Despite its flexible infrastructure, SDN's centralized design makes it vulnerable to Distributed Denial of Service (DDoS) attacks. This project reviews research on safeguarding SDN against DDoS attacks, analyzing various detection and mitigation strategies. It explores the types of DDoS attacks across different planes and communication links in SDN, examines emerging security measures, and reviews datasets, tools, and simulators used for detection. The project also identifies open challenges and potential future research directions, offering a comparative analysis of DDoS detection techniques based on essential parameters.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="cluster2.jpg" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, visit the project:<a href="https://link.springer.com/article/10.1007/s10586-024-04596-z"> Project Link</a></p>
+            </div>
+        </div>
+        
+<div class="horizontal-line"></div>
+<div class="project">
+    <h3 class="project-title"><span>Project:</span> Mechanism Design for Public Projects</h3>
+    <div class="project-content">
+        <div class="project-text-column">
+            <div class="project-text">
+                <p>
+                    This project focuses on mechanism design for nonexcludable and excludable binary public project problems, aiming to maximize the expected number of consumers and agents’ welfare. For the nonexcludable public project model, it establishes a condition under which the conservative equal costs mechanism is optimal and provides a dynamic program for general distributions to derive the optimal mechanism. For the excludable public project model, the project identifies conditions where the serial cost-sharing mechanism is near-optimal for 2 and 3 agents and introduces three machine learning-based approaches to design better-performing mechanisms. These approaches combine advanced optimization techniques, neural network initialization strategies, and efficient training processes, contributing to the broader field of machine learning-based mechanism design.
+                </p>
+            </div>
+        </div>
+        <div class="project-image-column">
+            <img src="public.png" alt="Mechanism Design Image" class="project-image">
+        </div>
+    </div>
+    <div class="project-references">
+        <p>For more information, visit the project: <a href="https://link.springer.com/article/10.1007/s10458-024-09647-8">Project Link</a></p>
+    </div>
+</div>
+<div class="horizontal-line"></div>
+
+
+        <div class="project">
+            <h3 class="project-title"><span>Project:</span> Smartphone Security: Attack and Defense Techniques</h3>
+            <div class="project-content">
+                <div class="project-text-column">
+                    <div class="project-text">
+                        <p>
+                            This project investigates the wireless network technologies, such as GSM, GPRS, EDGE, and UMTS, that have driven the widespread adoption of smartphones. These devices, now indispensable due to their extensive functionalities like internet access, office applications, and Wi-Fi, are the primary means for accessing the internet and conducting sensitive transactions such as online banking and shopping. This increased usage has escalated the risk of cyber-attacks. The project addresses this problem by analyzing these essential technologies and highlighting their associated security risks, aiming to develop more secure mobile communication frameworks to protect smartphone users.</p>
+                    </div>
+                </div>
+                <div class="project-image-column">
+                    <img src="smart.png" alt="Project Image" class="project-image">
+                </div>
+            </div>
+            <div class="project-references">
+                <p>For more information, visit the project:<a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429424878-10/overview-smartphone-security-attack-defense-techniques-diksha-goel-ankit-kumar-jain"> Project Link</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
