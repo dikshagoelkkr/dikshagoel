@@ -241,80 +241,101 @@ button:hover {
 
 
 <p></p>
+
+
+
 /* Education Section */
 .education-section {
-    background-color: #2a2a2a; /* Consistent dark gray background */
-    padding: 40px 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #e0e0e0; /* Light gray text for readability */
+    background-color: #2a2a2a;
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-heading {
-    color: #ffcc00; /* Yellow heading */
+    color: #ffcc00;
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
+    position: relative;
 }
 
-/* Cards for Education Entries */
-.education-cards {
+.section-heading::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.card-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .education-card {
-    display: flex;
-    border: 1px solid #555; /* Subtle border for separation */
+    background-color: #333;
+    border: 1px solid #555;
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #333; /* Consistent dark section background */
-    color: #e0e0e0; /* Light gray text */
-    transition: all 0.3s ease-in-out;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .education-card:hover {
-    background-color: #444; /* Slightly lighter on hover */
-    transform: scale(1.02); /* Hover effect */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-/* Year Styling */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header i {
+    color: #ffcc00;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
 .education-year {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffcc00; /* Yellow for emphasis */
-    margin-right: 20px;
-    align-self: center;
+    font-size: 18px;
+    color: #ffcc00;
 }
 
-/* Text Content for Education Entries */
-.education-content {
-    flex: 1;
+.card-body {
+    font-size: 14px;
 }
 
 .education-degree {
     font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-    color: #ffcc00; /* Yellow degree name */
+    color: #ffcc00;
+    margin: 10px 0 5px 0;
 }
 
-.education-detail {
+.education-detail, .education-university, .education-thesis {
     margin: 5px 0;
-    color: #e0e0e0; /* Light gray for details */
-}
-
-.education-university {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-    /*color: #ffcc00; Yellow university name */
 }
 
 .education-thesis {
     font-style: italic;
-    color: #e0e0e0; /* Light gray for thesis title */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-card {
+        width: 90%;
+    }
 }
