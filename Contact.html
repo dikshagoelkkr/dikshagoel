@@ -4,89 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Dr. Diksha Goel</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcX3Vj1kA5k3Zb2H3uGJ8u8gLq+1lySx1XGfKQXmA0Xf7eV2bVZLfFXJ+/l49PjL6xA9P4eAsE7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .contact-row {
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .title-bar {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            background-color: #333;
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            color: #e0e0e0;
-            padding: 20px;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-column {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .contact-column:first-child, .contact-column:nth-child(2) {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .contact-column:first-child {
-            align-items: flex-end;
-            padding-right: 10px;
-        }
-
-        .contact-column:nth-child(2) {
-            padding-left: 10px;
-            padding-right: 40px;
-        }
-
-        .contact-column h2, .contact-column p {
+        .title-bar h4 {
             margin: 0;
-            padding: 5px 0;
+            font-size: 22px;
+            font-weight: bold;
         }
 
-        .contact-column p a {
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #444;
+            border-radius: 4px;
+        }
+
+        .cover-photo {
+            height: 220px;
+            background: linear-gradient(to bottom, rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffcc00;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cover-photo h2 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        .contact-section:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-section h2 {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            margin: 0;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .contact-section a {
             color: #ffcc00;
             text-decoration: none;
+            font-weight: bold;
         }
 
-        .contact-column p a:hover {
+        .contact-section a:hover {
             text-decoration: underline;
         }
 
-        .right-column {
-            margin-left: auto; /* Shift form to the right */
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #ffcc00;
+        }
+
+        .social-icons i {
+            color: #e0e0e0;
+            font-size: 18px;
+        }
+
+        .social-icons a:hover i {
+            color: #1a1a1a;
         }
     </style>
 </head>
 <body>
-    <div class="title-bar">
+    <!-- Header Section -->
+    <header class="title-bar">
         <h4>Diksha Goel</h4>
-                <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="Publications.html">Publications</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Experience.html">Experience</a></li>
-            <li><a href="Reviewer.html">Reviewer & Organizer</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    </div>
-    <div class="cover-photo">
-        <div class="cover-text">
-           <h2 style="margin-bottom: 5px;">Contact Me</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Reviewer.html">Reviewer & Organizer</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cover Photo Section -->
+    <section class="cover-photo">
+        <h2>Contact Me</h2>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <!-- Address Section -->
+        <div class="contact-section">
+            <h2>Address</h2>
+            <p>CSIRO's Data 61<br>Research Way, Clayton VIC 3168<br>Australia</p>
         </div>
-    </div>
-    <div class="contact-row">
-        <div class="contact-column">
-            <h2 style="margin-bottom: 80px;">Address:</h2>
-            <h2>Email:</h2>
+
+        <!-- Email Section -->
+        <div class="contact-section">
+            <h2>Email</h2>
+            <p><a href="mailto:diksha.goel@csiro.au">diksha.goel@csiro.au</a></p>
         </div>
-        <div class="contact-column">
-            <p style="margin-bottom: 30px;">CSIRO's Data 61<br>Research Way, Clayton Vic 3168<br>Australia</p>
-            <p><a href="mailto:diksha.goel@csiro.au">diksha.goel@csiro.au</a><br>
+
+        <!-- Social Media Section -->
+        <div class="contact-section">
+            <div class="social-icons">
+                <a href="https://x.com/Diksha__Goel" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=USow104AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/diksha-goel-055b9b161/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:diksha.goel@csiro.au" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </div>
 </body>
