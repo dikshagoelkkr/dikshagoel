@@ -1,73 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Dr. Diksha Goel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcX3Vj1kA5k3Zb2H3uGJ8u8gLq+1lySx1XGfKQXmA0Xf7eV2bVZLfFXJ+/l49PjL6xA9P4eAsE7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Diksha Goel - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-        }
-
-        .title-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #2c2c2c;
-            padding: 15px 30px;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .title-bar h4 {
-            margin: 0;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            padding: 8px 15px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover,
-        nav ul li a.active {
-            background-color: #444;
-            border-radius: 4px;
-        }
-
-        .cover-photo {
-            height: 220px;
-            background: linear-gradient(to bottom, rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffcc00;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .cover-photo h2 {
-            margin: 0;
-            font-size: 36px;
-            font-weight: bold;
-        }
-
         .contact-container {
             max-width: 800px;
             margin: 40px auto;
@@ -110,42 +50,29 @@
             text-decoration: underline;
         }
 
-        /* Social Media Icons */
-        .social-icons {
+        /* Contact Icons */
+        .contact-icons {
             display: flex;
             gap: 15px;
             margin-top: 10px;
         }
 
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-color: #444;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s ease;
+        .contact-icons a img {
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
         }
 
-        .social-icons a:hover {
-            background-color: #ffcc00;
-        }
-
-        .social-icons i {
-            color: #e0e0e0;
-            font-size: 18px;
-        }
-
-        .social-icons a:hover i {
-            color: #1a1a1a;
+        .contact-icons a:hover img {
+            transform: scale(1.1); /* Adds a subtle zoom effect */
         }
     </style>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header class="title-bar">
+    <!-- Title Bar -->
+    <div class="title-bar">
         <h4>Diksha Goel</h4>
         <nav>
             <ul>
@@ -157,14 +84,15 @@
                 <li><a href="Contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
-    <!-- Cover Photo Section -->
-    <section class="cover-photo">
-        <h2>Contact Me</h2>
-    </section>
+    <!-- Cover Section -->
+    <div class="cover-photo">
+        <div class="cover-text">
+             <h2 style="margin-bottom: 5px;">Contact</h2></div>
+    </div>
 
-    <!-- Contact Section -->
+       <!-- Contact Section -->
     <div class="contact-container">
         <!-- Address Section -->
         <div class="contact-section">
@@ -180,11 +108,23 @@
 
         <!-- Social Media Section -->
         <div class="contact-section">
-            <div class="social-icons">
-                <a href="https://x.com/Diksha__Goel" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://scholar.google.com/citations?hl=en&user=USow104AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://www.linkedin.com/in/diksha-goel-055b9b161/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:diksha.goel@csiro.au" target="_blank"><i class="fas fa-envelope"></i></a>
+            <div class="contact-icons">
+                <!-- Twitter -->
+                <a href="https://x.com/Diksha__Goel" target="_blank">
+                    <img src="twitter1.png" alt="Twitter">
+                </a>
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.com/citations?hl=en&user=USow104AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+                    <img src="google-scholar.png" alt="Google Scholar">
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/diksha-goel-055b9b161/" target="_blank">
+                    <img src="linkldn.png" alt="LinkedIn">
+                </a>
+                <!-- Email -->
+                <a href="mailto:diksha.goel@csiro.au" target="_blank">
+                    <img src="email.jpeg" alt="Email">
+                </a>
             </div>
         </div>
     </div>
