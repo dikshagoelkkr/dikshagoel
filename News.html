@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Goel - News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .cover-photo {
+            height: 270px;
+            background: url('cover.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .news-section {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            color: #e0e0e0;
+        }
+
+        .news-heading {
+            text-align: center;
+            color: #ffcc00;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .news-item b {
+            color: #ffcc00;
+        }
+
+        @media (max-width: 768px) {
+            .news-section {
+                padding: 20px;
+            }
+
+            .news-item {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <h4>Diksha Goel</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Reviewer.html">Reviewer & Organizer</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Cover Photo -->
+    <div class="cover-photo">
+        <div class="cover-text">
+            <h2 style="margin-bottom: 5px;">News</h2>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-section">
+        <h2 class="news-heading">2024</h2>
+        <p class="news-item"><b>October:</b> Promoted to Research Scientist at CSIRO's Data61.</p>
+        <p class="news-item"><b>October:</b> Paper accepted at IEEE ACCESS.</p>
+        <p class="news-item"><b>September:</b> Presented paper at ESORICS Conference in Poland.</p>
+        <p class="news-item"><b>September:</b> Presented at HACL Workshop in Melbourne, Australia.</p>
+        <p class="news-item"><b>June:</b> Paper accepted at European Symposium on Research in Computer Security (ESORICS).</p>
+        <p class="news-item"><b>May:</b> Paper accepted at Cluster Computing.</p>
+        <p class="news-item"><b>May:</b> Attended PhD Convocation ceremony at University of Adelaide.</p>
+        <p class="news-item"><b>April:</b> Paper accepted at Journal of Autonomous Agents and Multi-Agent Systems (JAAMAS).</p>
+        <p class="news-item"><b>July:</b> Paper accepted at ACM Transactions on Evolutionary Learning and Optimization (TELO).</p>
+        <p class="news-item"><b>March:</b> Paper accepted at Expert Systems with Applications (ESWA).</p>
+    </div>
+
+    <div class="news-section">
+        <h2 class="news-heading">2023</h2>
+        <p class="news-item"><b>December:</b> Presented at AI-OPT Workshop in Melbourne, Australia.</p>
+        <p class="news-item"><b>November:</b> Attended ACDC Project event at Edith Cowan University, Perth, Australia.</p>
+        <p class="news-item"><b>October:</b> Completed PhD degree at the University of Adelaide.</p>
+        <p class="news-item"><b>July:</b> Presented paper at GECCO Conference in Lisbon, Portugal.</p>
+        <p class="news-item"><b>July:</b> Joined CSIRO's Data61 as Postdoctoral Research Fellow.</p>
+        <p class="news-item"><b>May:</b> Submitted PhD thesis.</p>
+        <p class="news-item"><b>March:</b> Paper accepted at GECCO Conference.</p>
+    </div>
+
+    <div class="news-section">
+        <h2 class="news-heading">2022</h2>
+        <p class="news-item"><b>November:</b> Presented paper at WI-IAT Conference.</p>
+        <p class="news-item"><b>August:</b> Paper accepted at WI-IAT 2022.</p>
+        <p class="news-item"><b>July:</b> Presented paper at GECCO Conference.</p>
+        <p class="news-item"><b>March:</b> Paper accepted at GECCO Conference.</p>
+    </div>
+
+    <div class="news-section">
+        <h2 class="news-heading">2021</h2>
+        <p class="news-item"><b>October:</b> Presented paper at LCN Conference.</p>
+        <p class="news-item"><b>June:</b> Paper accepted at LCN Conference.</p>
+        <p class="news-item"><b>March:</b> Paper accepted at Neural Processing Letters.</p>
+    </div>
+
+</body>
+</html>
